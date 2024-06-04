@@ -1,0 +1,54 @@
+{
+  "eula": "",
+  "vendor": "imran",
+  "license": "",
+  "id": "com.imran.sap.sac.bshaim",
+  "version": "1.0.0",
+  "name": "bshaim SAC",
+  "newInstancePrefix": "bshaimInSAC",
+  "description": "A custom widget to integrate bshaim in SAC Analytic application",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "bshaim-custom-widget",
+      "url": "https://github.com/OIZ1IB/SAC_bshaim/blob/main/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 1
+		},
+		"height": {
+			"type": "integer",
+			"default": 1
+		}
+  },
+  "methods": {
+		"post": {
+			"description": "Wrapper for jQuery post",
+			"parameters": [
+				{
+					"name": "APIKey",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "endPoint",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "prompt",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"returnType": "string"
+		}
+  },
+  "events": {
+  }
+}
